@@ -1,0 +1,227 @@
+@import 'gred.scss';
+
+body {
+    margin: 0px;	
+    background: url('/images/iphone-indexshadow.png') no-repeat fixed center;
+    background-size: 100% 100px;
+    background-position: 0 50px;
+    background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  height: 45px;
+  padding: 5px 0 5px 0;
+
+    .search-container {
+        width: 16%;
+        vertical-align: middle;
+        white-space: nowrap;
+        float: left;
+        margin: 7px 0 0 10%;
+        
+        .searchbox {
+            background-color: #8c0a0a;
+            background-image: url('/images/SearchInRedBox@2x.png');
+            background-position: -6px -9px;
+            background-repeat: no-repeat;
+            background-size: 46px 48px;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border-radius: 5px;
+            border: none;
+            height: 5px;
+            -moz-box-shadow: inset 0 0 2px 2px #730606; 
+            -webkit-box-shadow: inset 0 0 2px 2px #730606; 
+            box-shadow: inset 0 0 2px 2px #730606;
+
+            
+        }
+
+        input::-moz-placeholder {
+           color: #f0c3c3;
+           font-size: 13px;
+        }
+
+        input::-moz-placeholder { /* Firefox 19+ */
+           color: #f0c3c3;
+           font-size: 13px;
+        }   
+
+        :-moz-placeholder { /* Firefox 18- */
+           color: #f0c3c3;
+           font-size: 13px;
+        }
+
+        input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+           color: #f0c3c3;
+           font-size: 13px;
+        }
+
+        
+    }
+    .title {
+       width: 30%;
+       margin: 0px;
+       color: #FFF;
+       font-size: 19px;
+       font-family: 'Pathway Gothic One', sans-serif;
+       margin: 11px 0 0 0;
+    }
+
+    .rignt-container {
+        float: right;
+        width: 15%;
+        margin-top: -34px;
+
+        ul {
+           list-style-type: none;
+           margin: 0 0 0 0;
+           padding: 0;
+
+           li {
+             float:left;
+
+             img {
+                width: 70%;
+                height: 70%;
+             }
+           }
+        }
+        .dropbtn {
+            background-color: Transparent;
+		    background-image: url('/images/MoreOptions@2x.png');
+            background-position: 3px 3px;
+            background-repeat: no-repeat;
+            background-size: 46px 48px;
+		    color: white;
+		    padding: 16px;
+		    font-size: 16px;
+		    border: none;
+		    cursor: pointer;
+
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+		    background-color: Transparent;
+		}
+
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #ad0f03;
+		    min-width: auto;
+		    overflow: auto;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		    margin: 50px 0 0 -120px;
+		    padding-bottom: 20px;
+
+		    .border {
+                border-bottom: 1px solid #FFF;
+		    }
+
+		    .menu1 {
+              
+                padding: 10px 10px 10px 10px;
+                height: auto;
+
+                li {
+                   
+                    width: 22%;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-right: 7px;
+
+ 
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+
+                    span {
+                        color: #FFF;
+                        font-family: Arial;
+                        font-size: 12px;
+                    }
+
+                }
+
+		    }
+
+		    .menu2 {
+
+		        color: #FFF;
+                font-family: Arial;
+                font-size: 16px;
+                margin-top: 147px;
+                height: p;
+                padding-top: 39px;
+                min-height: 95px;
+
+                li {
+                    width: 100%;
+                    margin: 0 0px 0px 2px;
+
+                    a {
+                       color: #FFF;
+                    }
+                }
+		    }
+
+		    .menu3 {
+
+		       color: #FFF;
+               font-family: Arial;
+               font-size: 16px;
+               padding-top: 30px;
+
+               li {
+                    width: 100%;
+                    margin: -20px 0 0px 2px;
+
+                    a {
+                       color: #FFF;
+                       float: left;
+                    }
+                    .arrow {
+                       float: right;
+                       width: 15px;
+                       height: 15px;
+                       margin: 10px 10px 0 0;
+
+                    }
+                    .status {
+                        float: right;
+                        padding-right: 10px;
+
+                        span {
+                            margin-top: 20px;
+                        }
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+		    }
+		}
+
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.dropdown a:hover {background-color: #ddd;}
+
+		.show {display: block;}
+    }
+}
